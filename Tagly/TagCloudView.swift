@@ -7,19 +7,42 @@
 
 import SwiftUI
 
+/// A view that allows displaying content in tag cloud manner.
 public struct TagCloudView<T, Content>: View where T: Identifiable, Content: View {
+    /// Holds the rendering height and coordinates of a TagCloudView.
+    /// It's a dynamic frame though, which means its values change while
+    /// the TagCloudView is being rendered.
     private class Frame: ObservableObject {
+        /// Horizontal offset that determines where to draw the next tag in the x axis.
         var x: CGFloat = 0
+
+        /// Vertical offset that determines where to draw the next tag in the y axis.
         var y: CGFloat = 0
+
+        /// The current height of a TagCloudView.
         @Published var height: CGFloat = 0
     }
 
+    /// Data to be iterated and displayed.
     let data: [T]
+
+    /// Spacing between each tag in the cloud.
     let spacing: CGFloat
+
+    /// Closure that builds each tag in the cloud.
     let content: (T) -> Content
 
+    /// Holds the rendering state of the cloud view. Used to determine
+    /// the vertical and horizonatal offsets to draw each tag and to clip the
+    /// cloud itself at the minimum necessary height.
     @ObservedObject private var frame = Frame()
 
+    /// Builds a TagCloudView.
+    ///
+    /// - Parameters:
+    ///   - data: The data to be iterated and displayed.
+    ///   - spacing: The spacing between each tag in the cloud.
+    ///   - content: ViewBuilder Closure that builds each tag in the cloud.
     public init(data: [T], spacing: CGFloat = 0, @ViewBuilder content: @escaping (T) -> Content) {
         self.data = data
         self.spacing = spacing
@@ -37,6 +60,11 @@ public struct TagCloudView<T, Content>: View where T: Identifiable, Content: Vie
         .frame(height: frame.height)
     }
 
+    /// Builds a new tag in the cloud by providing the proper x and y offsets based on the geometry
+    ///
+    /// - Parameters:
+    ///   - element: The identifiable element to display.
+    ///   - geometry: The geometry of the parent view.
     private func makeTagView(element: T, geometry: GeometryProxy) -> some View {
         content(element)
             .alignmentGuide(.leading) { d in
@@ -61,7 +89,7 @@ public struct TagCloudView<T, Content>: View where T: Identifiable, Content: Vie
                 }
 
                 // Should restore to leading if it's the first tag or
-                // the new tag doesn't fit available space
+                // the new tag doesn't fit the available space
                 if isFirst || exceedsAvailableWidth {
                     self.frame.x = d.width + self.spacing
                     return 0
