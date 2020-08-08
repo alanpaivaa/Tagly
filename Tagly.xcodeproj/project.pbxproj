@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD8AA98924DE2AF100530906 /* Tagly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AA97F24DE2AF100530906 /* Tagly.framework */; };
+		BD8AA98E24DE2AF100530906 /* TaglyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AA98D24DE2AF100530906 /* TaglyTests.swift */; };
+		BD8AA99024DE2AF100530906 /* Tagly.h in Headers */ = {isa = PBXBuildFile; fileRef = BD8AA98224DE2AF100530906 /* Tagly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD8AA9A024DE2B2900530906 /* TaglyExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AA99F24DE2B2900530906 /* TaglyExamplesApp.swift */; };
+		BD8AA9A224DE2B2900530906 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AA9A124DE2B2900530906 /* ContentView.swift */; };
+		BD8AA9A424DE2B2C00530906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8AA9A324DE2B2C00530906 /* Assets.xcassets */; };
+		BD8AA9A724DE2B2C00530906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD8AA98A24DE2AF100530906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD8AA97624DE2AF100530906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD8AA97E24DE2AF100530906;
+			remoteInfo = Tagly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD8AA97F24DE2AF100530906 /* Tagly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tagly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8AA98224DE2AF100530906 /* Tagly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tagly.h; sourceTree = "<group>"; };
+		BD8AA98324DE2AF100530906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8AA98824DE2AF100530906 /* TaglyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaglyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8AA98D24DE2AF100530906 /* TaglyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaglyTests.swift; sourceTree = "<group>"; };
+		BD8AA98F24DE2AF100530906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8AA99D24DE2B2900530906 /* TaglyExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaglyExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8AA99F24DE2B2900530906 /* TaglyExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaglyExamplesApp.swift; sourceTree = "<group>"; };
+		BD8AA9A124DE2B2900530906 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD8AA9A324DE2B2C00530906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD8AA9A824DE2B2C00530906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD8AA97C24DE2AF100530906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8AA98524DE2AF100530906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8AA98924DE2AF100530906 /* Tagly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8AA99A24DE2B2900530906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD8AA97524DE2AF100530906 = {
+			isa = PBXGroup;
+			children = (
+				BD8AA98124DE2AF100530906 /* Tagly */,
+				BD8AA98C24DE2AF100530906 /* TaglyTests */,
+				BD8AA99E24DE2B2900530906 /* TaglyExamples */,
+				BD8AA98024DE2AF100530906 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD8AA98024DE2AF100530906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD8AA97F24DE2AF100530906 /* Tagly.framework */,
+				BD8AA98824DE2AF100530906 /* TaglyTests.xctest */,
+				BD8AA99D24DE2B2900530906 /* TaglyExamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD8AA98124DE2AF100530906 /* Tagly */ = {
+			isa = PBXGroup;
+			children = (
+				BD8AA98224DE2AF100530906 /* Tagly.h */,
+				BD8AA98324DE2AF100530906 /* Info.plist */,
+			);
+			path = Tagly;
+			sourceTree = "<group>";
+		};
+		BD8AA98C24DE2AF100530906 /* TaglyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD8AA98D24DE2AF100530906 /* TaglyTests.swift */,
+				BD8AA98F24DE2AF100530906 /* Info.plist */,
+			);
+			path = TaglyTests;
+			sourceTree = "<group>";
+		};
+		BD8AA99E24DE2B2900530906 /* TaglyExamples */ = {
+			isa = PBXGroup;
+			children = (
+				BD8AA99F24DE2B2900530906 /* TaglyExamplesApp.swift */,
+				BD8AA9A124DE2B2900530906 /* ContentView.swift */,
+				BD8AA9A324DE2B2C00530906 /* Assets.xcassets */,
+				BD8AA9A824DE2B2C00530906 /* Info.plist */,
+				BD8AA9A524DE2B2C00530906 /* Preview Content */,
+			);
+			path = TaglyExamples;
+			sourceTree = "<group>";
+		};
+		BD8AA9A524DE2B2C00530906 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BD8AA97A24DE2AF100530906 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8AA99024DE2AF100530906 /* Tagly.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BD8AA97E24DE2AF100530906 /* Tagly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8AA99324DE2AF100530906 /* Build configuration list for PBXNativeTarget "Tagly" */;
+			buildPhases = (
+				BD8AA97A24DE2AF100530906 /* Headers */,
+				BD8AA97B24DE2AF100530906 /* Sources */,
+				BD8AA97C24DE2AF100530906 /* Frameworks */,
+				BD8AA97D24DE2AF100530906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tagly;
+			productName = Tagly;
+			productReference = BD8AA97F24DE2AF100530906 /* Tagly.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD8AA98724DE2AF100530906 /* TaglyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8AA99624DE2AF100530906 /* Build configuration list for PBXNativeTarget "TaglyTests" */;
+			buildPhases = (
+				BD8AA98424DE2AF100530906 /* Sources */,
+				BD8AA98524DE2AF100530906 /* Frameworks */,
+				BD8AA98624DE2AF100530906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD8AA98B24DE2AF100530906 /* PBXTargetDependency */,
+			);
+			name = TaglyTests;
+			productName = TaglyTests;
+			productReference = BD8AA98824DE2AF100530906 /* TaglyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD8AA99C24DE2B2900530906 /* TaglyExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8AA9A924DE2B2C00530906 /* Build configuration list for PBXNativeTarget "TaglyExamples" */;
+			buildPhases = (
+				BD8AA99924DE2B2900530906 /* Sources */,
+				BD8AA99A24DE2B2900530906 /* Frameworks */,
+				BD8AA99B24DE2B2900530906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaglyExamples;
+			productName = TaglyExamples;
+			productReference = BD8AA99D24DE2B2900530906 /* TaglyExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD8AA97624DE2AF100530906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					BD8AA97E24DE2AF100530906 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					BD8AA98724DE2AF100530906 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					BD8AA99C24DE2B2900530906 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = BD8AA97924DE2AF100530906 /* Build configuration list for PBXProject "Tagly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD8AA97524DE2AF100530906;
+			productRefGroup = BD8AA98024DE2AF100530906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD8AA97E24DE2AF100530906 /* Tagly */,
+				BD8AA98724DE2AF100530906 /* TaglyTests */,
+				BD8AA99C24DE2B2900530906 /* TaglyExamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD8AA97D24DE2AF100530906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8AA98624DE2AF100530906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8AA99B24DE2B2900530906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8AA9A724DE2B2C00530906 /* Preview Assets.xcassets in Resources */,
+				BD8AA9A424DE2B2C00530906 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD8AA97B24DE2AF100530906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8AA98424DE2AF100530906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8AA98E24DE2AF100530906 /* TaglyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8AA99924DE2B2900530906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8AA9A224DE2B2900530906 /* ContentView.swift in Sources */,
+				BD8AA9A024DE2B2900530906 /* TaglyExamplesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD8AA98B24DE2AF100530906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD8AA97E24DE2AF100530906 /* Tagly */;
+			targetProxy = BD8AA98A24DE2AF100530906 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD8AA99124DE2AF100530906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD8AA99224DE2AF100530906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD8AA99424DE2AF100530906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tagly/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.dev.alan.Tagly;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD8AA99524DE2AF100530906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tagly/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.dev.alan.Tagly;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD8AA99724DE2AF100530906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				INFOPLIST_FILE = TaglyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.dev.alan.TaglyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD8AA99824DE2AF100530906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				INFOPLIST_FILE = TaglyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.dev.alan.TaglyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD8AA9AA24DE2B2C00530906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TaglyExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TaglyExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.dev.alan.TaglyExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD8AA9AB24DE2B2C00530906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TaglyExamples/Preview Content\"";
+				DEVELOPMENT_TEAM = EEJ5MB9Q92;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TaglyExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.dev.alan.TaglyExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD8AA97924DE2AF100530906 /* Build configuration list for PBXProject "Tagly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8AA99124DE2AF100530906 /* Debug */,
+				BD8AA99224DE2AF100530906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD8AA99324DE2AF100530906 /* Build configuration list for PBXNativeTarget "Tagly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8AA99424DE2AF100530906 /* Debug */,
+				BD8AA99524DE2AF100530906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD8AA99624DE2AF100530906 /* Build configuration list for PBXNativeTarget "TaglyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8AA99724DE2AF100530906 /* Debug */,
+				BD8AA99824DE2AF100530906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD8AA9A924DE2B2C00530906 /* Build configuration list for PBXNativeTarget "TaglyExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8AA9AA24DE2B2C00530906 /* Debug */,
+				BD8AA9AB24DE2B2C00530906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD8AA97624DE2AF100530906 /* Project object */;
+}
