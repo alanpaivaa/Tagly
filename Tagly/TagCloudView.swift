@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TagCloudView<T, Content>: View where T: Identifiable, Content: View {
+public struct TagCloudView<T, Content>: View where T: Identifiable, Content: View {
     private class Frame: ObservableObject {
         var x: CGFloat = 0
         var y: CGFloat = 0
@@ -20,13 +20,13 @@ struct TagCloudView<T, Content>: View where T: Identifiable, Content: View {
 
     @ObservedObject private var frame = Frame()
 
-    init(data: [T], spacing: CGFloat = 0, @ViewBuilder content: @escaping (T) -> Content) {
+    public init(data: [T], spacing: CGFloat = 0, @ViewBuilder content: @escaping (T) -> Content) {
         self.data = data
         self.spacing = spacing
         self.content = content
     }
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .topLeading) {
                 ForEach(data) { element in
