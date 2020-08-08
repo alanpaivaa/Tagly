@@ -29,7 +29,7 @@ public struct TagCloudView<T, Content>: View where T: Identifiable, Content: Vie
     public var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .topLeading) {
-                ForEach(data) { element in
+                ForEach(self.data) { element in
                     self.makeTagView(element: element, geometry: geometry)
                 }
             }
@@ -42,38 +42,38 @@ public struct TagCloudView<T, Content>: View where T: Identifiable, Content: Vie
             .alignmentGuide(.leading) { d in
                 let isFirst = element.id == self.data.first?.id
                 if isFirst {
-                    frame.y = 0
+                    self.frame.y = 0
                 }
 
                 let availableWidth = geometry.size.width
-                let exceedsAvailableWidth = (frame.x + d.width) > availableWidth
+                let exceedsAvailableWidth = (self.frame.x + d.width) > availableWidth
 
                 if isFirst {
-                    if frame.height == 0 {
-                        frame.height = d.height
+                    if self.frame.height == 0 {
+                        self.frame.height = d.height
                     }
                 } else if exceedsAvailableWidth {
-                    frame.y += d.height + self.spacing
-                    let newHeight = frame.y + d.height
-                    if newHeight > frame.height {
-                        frame.height = newHeight
+                    self.frame.y += d.height + self.spacing
+                    let newHeight = self.frame.y + d.height
+                    if newHeight > self.frame.height {
+                        self.frame.height = newHeight
                     }
                 }
 
                 // Should restore to leading if it's the first tag or
                 // the new tag doesn't fit available space
                 if isFirst || exceedsAvailableWidth {
-                    frame.x = d.width + self.spacing
+                    self.frame.x = d.width + self.spacing
                     return 0
                 }
 
                 defer {
-                    frame.x += (d.width + self.spacing)
+                    self.frame.x += (d.width + self.spacing)
                 }
-                return -frame.x
+                return -self.frame.x
             }
             .alignmentGuide(.top) { _ in
-                return -frame.y
+                return -self.frame.y
             }
     }
 }
