@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Tag: Identifiable {
+    let id: Int
+    let title: String
+}

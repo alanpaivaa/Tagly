@@ -15,6 +15,9 @@
 		BD8AA9A424DE2B2C00530906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8AA9A324DE2B2C00530906 /* Assets.xcassets */; };
 		BD8AA9A724DE2B2C00530906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */; };
 		BD8AA9AD24DE2DDD00530906 /* TagCloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AA9AC24DE2DDD00530906 /* TagCloudView.swift */; };
+		BD8AA9AF24DE2F7C00530906 /* Tagly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AA97F24DE2AF100530906 /* Tagly.framework */; };
+		BD8AA9B024DE2F7C00530906 /* Tagly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD8AA97F24DE2AF100530906 /* Tagly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD8AA9B524DE2FEE00530906 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AA9B424DE2FEE00530906 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +28,28 @@
 			remoteGlobalIDString = BD8AA97E24DE2AF100530906;
 			remoteInfo = Tagly;
 		};
+		BD8AA9B124DE2F7C00530906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD8AA97624DE2AF100530906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD8AA97E24DE2AF100530906;
+			remoteInfo = Tagly;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD8AA9B324DE2F7C00530906 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD8AA9B024DE2F7C00530906 /* Tagly.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BD8AA97F24DE2AF100530906 /* Tagly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tagly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +65,7 @@
 		BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD8AA9A824DE2B2C00530906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8AA9AC24DE2DDD00530906 /* TagCloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloudView.swift; sourceTree = "<group>"; };
+		BD8AA9B424DE2FEE00530906 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8AA9AF24DE2F7C00530906 /* Tagly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +102,7 @@
 				BD8AA98C24DE2AF100530906 /* TaglyTests */,
 				BD8AA99E24DE2B2900530906 /* TaglyExamples */,
 				BD8AA98024DE2AF100530906 /* Products */,
+				BD8AA9AE24DE2F7C00530906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +138,7 @@
 		BD8AA99E24DE2B2900530906 /* TaglyExamples */ = {
 			isa = PBXGroup;
 			children = (
+				BD8AA9B424DE2FEE00530906 /* Tag.swift */,
 				BD8AA99F24DE2B2900530906 /* TaglyExamplesApp.swift */,
 				BD8AA9A124DE2B2900530906 /* ContentView.swift */,
 				BD8AA9A324DE2B2C00530906 /* Assets.xcassets */,
@@ -126,6 +154,13 @@
 				BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD8AA9AE24DE2F7C00530906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,10 +220,12 @@
 				BD8AA99924DE2B2900530906 /* Sources */,
 				BD8AA99A24DE2B2900530906 /* Frameworks */,
 				BD8AA99B24DE2B2900530906 /* Resources */,
+				BD8AA9B324DE2F7C00530906 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD8AA9B224DE2F7C00530906 /* PBXTargetDependency */,
 			);
 			name = TaglyExamples;
 			productName = TaglyExamples;
@@ -283,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8AA9B524DE2FEE00530906 /* Tag.swift in Sources */,
 				BD8AA9A224DE2B2900530906 /* ContentView.swift in Sources */,
 				BD8AA9A024DE2B2900530906 /* TaglyExamplesApp.swift in Sources */,
 			);
@@ -295,6 +333,11 @@
 			isa = PBXTargetDependency;
 			target = BD8AA97E24DE2AF100530906 /* Tagly */;
 			targetProxy = BD8AA98A24DE2AF100530906 /* PBXContainerItemProxy */;
+		};
+		BD8AA9B224DE2F7C00530906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD8AA97E24DE2AF100530906 /* Tagly */;
+			targetProxy = BD8AA9B124DE2F7C00530906 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
