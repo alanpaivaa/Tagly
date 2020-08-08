@@ -14,6 +14,7 @@
 		BD8AA9A224DE2B2900530906 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AA9A124DE2B2900530906 /* ContentView.swift */; };
 		BD8AA9A424DE2B2C00530906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8AA9A324DE2B2C00530906 /* Assets.xcassets */; };
 		BD8AA9A724DE2B2C00530906 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */; };
+		BD8AA9AD24DE2DDD00530906 /* TagCloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8AA9AC24DE2DDD00530906 /* TagCloudView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		BD8AA9A324DE2B2C00530906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8AA9A624DE2B2C00530906 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD8AA9A824DE2B2C00530906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8AA9AC24DE2DDD00530906 /* TagCloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloudView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				BD8AA98224DE2AF100530906 /* Tagly.h */,
 				BD8AA98324DE2AF100530906 /* Info.plist */,
+				BD8AA9AC24DE2DDD00530906 /* TagCloudView.swift */,
 			);
 			path = Tagly;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				TargetAttributes = {
 					BD8AA97E24DE2AF100530906 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					BD8AA98724DE2AF100530906 = {
 						CreatedOnToolsVersion = 12.0;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8AA9AD24DE2DDD00530906 /* TagCloudView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +424,7 @@
 		BD8AA99424DE2AF100530906 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EEJ5MB9Q92;
@@ -435,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.dev.alan.Tagly;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,6 +450,7 @@
 		BD8AA99524DE2AF100530906 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EEJ5MB9Q92;
@@ -467,6 +475,7 @@
 		BD8AA99724DE2AF100530906 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEJ5MB9Q92;
 				INFOPLIST_FILE = TaglyTests/Info.plist;
@@ -485,6 +494,7 @@
 		BD8AA99824DE2AF100530906 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEJ5MB9Q92;
 				INFOPLIST_FILE = TaglyTests/Info.plist;
