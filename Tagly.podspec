@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "Tagly"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "A Cocoapods library tag provides a tag cloud view for use in SwiftUI"
 
   spec.description  = <<-DESC
