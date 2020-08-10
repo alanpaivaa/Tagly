@@ -1,0 +1,9 @@
+language: objective-c
+
+osx_image: xcode11.6
+env:
+  matrix:
+    - TEST_SDK=iphonesimulator13.6 OS=13.6 NAME='iPhone 11 Pro'
+
+script:
+  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project Tagly.xcodeproj -scheme Tagly -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
